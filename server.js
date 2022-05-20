@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 
 //terecera ruta, recibe un parametro
 app.get('/person/:id',(req, res) =>{
-   res.render('person' ,{ID: req.params.id, Qstr: req.query.qrst});
+   res.render('person' ,{ID: req.params.id, Message: req.query.message, Times: req.query.times});
 });
 
 app.listen(port); //levantar el server y ponerle a la escucha

@@ -8,6 +8,11 @@
 </head>
 <body>
     <h1>Person: <%= ID %></h1>
-    <h2>Query string value: <%= Qstr %></h2>
+    <h2>Message: <%= Message %></h2>
+    <h2>veces: <%= Times %></h2>
+    <% if ((Message == "Hola") || (Message == "Adios") || (Message == "Bienvenido")){ %>
+        <% for (let i=0; i < (Times); i++){ %>
+            <h3> <%= Message %> <%= ID %> </h3>
+            <% }} %>
 </body>
 </html>
